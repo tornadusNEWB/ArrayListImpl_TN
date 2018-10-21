@@ -21,7 +21,13 @@ public class Main {
         lista.add("9");
         lista.add("10");
         lista.add("11");
-        System.out.println(lista.);
+        lista.add("ada");
 
+
+
+
+        for (int i = 0; i< lista.size(); i++ ){
+            System.out.println(lista.get(i));
+        }
     }
 }

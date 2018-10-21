@@ -41,8 +41,31 @@ public class CustomList<E> {
         elements = nowaTablica;
 
         // 2 rozwiazanie
-        elements= Arrays.copyOf(elements, newSize);
+        elements = Arrays.copyOf(elements, newSize);
     }
+
+    // metoda get jest po to zeby pobrac element o danym indeksie
+    // typ generyczny E jest po to zeeby od uzytkownika pobieralo wszystkie typy
+    public E get(int i) {
+        if (i >= size || i < 0) {
+            throw new IndexOutOfBoundsException("nie ma takiego elementu");
+        }
+        return (E) elements[i];
+    }
+
+    // metoda size zeby zwrocila nam do petli for
+    public int size() {
+        return size;
+    }
+
+    public void remove (int index){
+        //do domu
+        // petla for
+        
+    }
+
+
+
 }
 
 
